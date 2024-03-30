@@ -1,0 +1,112 @@
+ {% load static %}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap" rel="stylesheet">
+    
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}/
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'calculator.css' %}">
+
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="container">
+        name = {{ name }}
+        age = {{ age }}
+    </div>
+    
+
+    <div class="contanier-fluid bg-danger py-5 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row ">
+                <div class="row">
+                    <h1 class="text-center mb-5">My Calculator</h1>
+                    <div class="col">
+                        <input type="text" class="w-100 p-5 border-0 rounded-1">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">AC</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">DEL</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">%</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">/</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">7</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">9</button>
+                    </div>
+                    <div class="col-3"> 
+                        <button class="w-100 border-0 rounded-1 p-3">*</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">4</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">-</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">1</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">2</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">3</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">+</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">0</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">00</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="w-100 border-0 rounded-1 p-3">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+ </body>
+ </html>
