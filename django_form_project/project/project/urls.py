@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('getform/',views.getform),
     path('postfrom/',views.postform),
+    path('fetchdata/',views.fetchdata),
     path('result/',views.result),
 ]
